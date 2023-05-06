@@ -1,0 +1,144 @@
+* {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+a {
+    text-decoration: none;
+}
+a:link {
+    color: white;
+}
+html {
+    background-color: black;
+}
+/* Header */
+header p {
+    padding-top: 10px;
+    text-align: center;
+    padding-bottom: 10px;
+    font-weight: bold;
+    font-size: 45px;
+    font-family:monospace;
+    color: white;
+    text-shadow: 5px 5px 5px black;
+}
+/* Video Element CSC  */
+#videoAnimations {
+    display: flex;
+}
+#cscVideo {
+    width: 50%;
+    overflow: hidden;
+    display: block;
+    height: 900px;
+}
+#cscVideo video {
+    margin-left: -220px;
+}
+
+#camVideo {
+    width: 50%;
+    overflow: hidden;
+    display: block;
+    height: 900px;
+}
+
+/* Overlaying Text */
+#text-links {
+    display: flex;
+}
+#overlay-csc {
+    position: absolute;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+#overlay-csc:hover {
+    background-color: rgba(11, 156, 59, 0.342);
+    transition: all 400ms;
+}
+
+#cslink {
+    color: white;
+    font-weight: lighter;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 65px;
+    text-align: center;
+    display: flex;
+    justify-content:center;
+    margin-left: 17%;
+    margin-top: 35%; /* MUST MATCH #PHOTOLINK */
+    display: inline-block;
+}
+#cslink:hover {
+    font-style:italic;
+    font-size: 66px;
+    transition: all 100ms;
+    background-color:rgba(240, 255, 255, 0.256);
+    border-radius: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+#photolink {
+    color: white;
+    font-weight: lighter;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 65px;
+    text-align: center;
+    display: flex;
+    justify-content:center;
+    margin-left: 27.5%;
+    margin-top: 35%; /* MUST MATCH #CSLINK */
+    display: inline-block;
+}
+
+#photolink:hover {
+    font-style:italic;
+    font-size: 66px;
+    transition: all 100ms;
+    background-color:rgba(240, 255, 255, 0.256);
+    border-radius: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+#overlay-photo {
+    position: absolute;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+#overlay-photo:hover {
+    background-color: rgba(11, 79, 156, 0.342);
+    transition: all 400ms;
+}
+
+/* Footer Elements */
+
+footer {
+    display: block;
+    padding: 50px;
+}
+
+
+footer p {
+    color: white;
+}
+
+
+@media screen and (max-height:895px) {
+    #cslink {
+        margin-top: 55%;
+    }
+    
+    #photolink {
+        margin-top: 55%;
+    }
+}
+
